@@ -1,0 +1,383 @@
+/* FONT FACE*/
+@font-face {
+  font-family: 'ducky';
+  src: url('../fonts/justducky-webfont.woff2') format('woff2'),
+       url('../fonts/justducky-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* ALGEMEEN */
+html{ 
+  scroll-behavior: smooth;
+}
+body{
+  color: #522951;
+  font-family: 'ducky', sans-serif;
+}
+p{
+  font-size: 14pt;
+  line-height: 15pt;
+}
+img{
+  width: 100%;
+}
+h1{
+  font-size: 45pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2{
+  font-size: 20pt;
+  text-transform: uppercase;
+  border-bottom: dotted 5px hsla(301, 54%, 62%, 1);
+  margin-bottom: 20px;
+}
+h3{
+  font-size: 20pt;
+  padding-bottom: 10px;
+}
+
+section h1{
+  padding-top: 20px;
+}
+
+main, footer{
+  float: right;
+  width: calc(100vw - 120px);
+}
+
+/* HEADER */
+header{
+  width: 100%;
+}
+
+/* NAV */
+header{
+  width: 100px;
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  height: 100vh;
+  z-index: 1;
+}
+header nav ul{
+  width: 100px;
+  margin-top: 20vh;
+}
+header nav ul li{
+  height: 80px;
+  margin: 0px 20px 20px 0;
+  width: 100px;
+}
+header nav .logo{
+  height: 20px;
+  width: 100px;
+  transition: .1s;
+  transform: scale(2);
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-color: white;
+  transform-origin: top left;
+  padding: 0px 120px 20px 0;
+  border-radius: 0 0 50px 0 ;
+}
+header nav .scrolled{
+  transform: scale(1);
+  padding: 20px 0 0 0;
+  border-radius: 0;
+}
+header nav ul li a{
+  text-decoration: none;  
+  text-align: center;
+  color: #000000;
+  transition: color 0.2s;
+  padding-top: 10px;
+  font-size: 13pt;
+}
+header nav ul li a:hover{
+  color: #D9ADD8;
+}
+header nav ul li a i{
+  color: hsla(301, 54%, 62%, 1);
+  font-size: 50px;
+  width: 100%;
+}
+
+/* MAIN */
+/* SLIDERMESSAGE */
+#slidermessage{
+  background-color: rgba(83, 35, 83, 0.7);
+  padding: 20px 30px;
+  margin-left: 5%;
+  top: 150px;
+  border-radius: 0 0 25px 25px;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+#slidermessage div p{
+  font-size: 20pt;
+  width: 100px;
+  transition: .2s;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  background-color: inherit;
+  color: white;
+  border: solid 2px white;
+  border-radius: 100px;
+}
+#slidermessage div p:hover{
+background-color: white;
+color: hsla(301, 54%, 62%, 1);
+}
+#slidermessage div p span{
+  font-size: 30pt;
+}
+
+/* FACALITEITEN */
+#facaliteiten .wrapcard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 50px auto;
+  max-width: 1400px;
+}
+#facaliteiten .card{
+  width: 400px;
+  height: 570px;
+  padding: 10px 20px 0 20px;  
+  margin: 20px 10px 0 10px;  
+  box-shadow: 2px 2px 10px -2px hsla(301, 54%, 62%, 1);
+}
+.card div{
+  overflow: hidden; 
+}
+.card .cardfoto{
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  transition: .3s;
+}
+.card:nth-child(odd):hover .cardfoto{
+  transform: scale(1.3) rotate(3deg);
+  opacity: 0.8;
+}
+.card:nth-child(even):hover .cardfoto{
+  transform: scale(1.3) rotate(-3deg);
+  opacity: 0.8;
+}
+.card h3{
+  padding-top: 10px;
+}
+.card p{
+  height: 100px;
+}
+#facaliteiten .card a{
+  color: hsla(301, 54%, 62%, 1);
+  border: solid 2px hsla(301, 54%, 62%, 1);
+  background-color: white;
+  transition: color .2s, background-color .2s;
+  display: block;
+  width: 150px;
+  padding: 10px;
+  border-radius: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+#facaliteiten .card a:hover{
+  color: white;
+  background-color: hsla(301, 54%, 62%, 1);
+}
+#cardfoto1{
+  background-image: url("../images/facaliteiten/1.jpg");
+}
+#cardfoto2{
+  background-image: url("../images/facaliteiten/2.jpg");
+}
+#cardfoto3{
+  background-image: url("../images/facaliteiten/3.jpg");
+}
+#cardfoto4{
+  background-image: url("../images/facaliteiten/4.jpg");
+}
+#cardfoto5{
+  background-image: url("../images/facaliteiten/5.jpg");
+}
+#cardfoto6{
+  background-image: url("../images/facaliteiten/6.jpg");
+}
+#cardfoto7{
+  background-image: url("../images/facaliteiten/7.jpg");
+}
+#cardfoto8{
+  background-image: url("../images/facaliteiten/8.jpg");
+}
+
+/* TUSSENBANNER */
+.banner{
+  height: 400px;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+#banner1{
+  background-image: url('../images/banner/banner_lake.jpg');
+}
+#banner2{
+  background-image: url('../images/banner/banner_kajak.jpg');
+}
+
+/* JEUGDBEWEGINGEN */
+#groepen ul{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+#groepen ul li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+#groepen li figure{
+  width: 100%;
+}
+#groepen p{
+  text-align: center;
+}
+
+
+/* BOEKEN */
+#boeken{
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+#boeken #persoongegevens{
+  width: 100%;
+  height: 30px;
+  padding: 20px 0;  
+
+}
+#boeken #persoongegevens input{
+  width: 200px;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid hsla(301, 54%, 62%, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#boeken #gegevensonder{
+  display: flex;
+}
+#boeken #nummergegevens{
+  text-align: right;
+  width: 450px;
+}
+#boeken #nummergegevens select{
+  width: 70px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid hsla(301, 54%, 62%, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#boeken #datumgegevens input{
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid hsla(301, 54%, 62%, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#boeken #datumgegevens{
+  text-align: right;
+  padding-right: 30px;
+  width: 450px;
+}
+#boeken label{
+  display: inline-block;
+  text-align: right;
+  min-width: 200px;
+  margin: 5px;
+}
+#boeken form button{
+  color: hsla(301, 54%, 62%, 1);
+  border: solid 2px hsla(301, 54%, 62%, 1);
+  background-color: white;
+  transition: color .2s, background-color .2s;
+  display: block;
+  width: 150px;
+  padding: 10px;
+  border-radius: 100px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+#boeken form button:hover{
+  color: white;
+  background-color: hsla(301, 54%, 62%, 1);
+}
+
+#boeken textarea{
+  width: 80%;
+  height: 60px;
+}
+
+/* FOOTER */
+footer{
+  padding: 200px 0 150px 0;
+  margin: 0 auto;
+}
+footer a{
+  color: #0071B9;
+  text-decoration: none;  
+  transition: .2s;
+}
+footer a:hover{
+  color: hsla(301, 54%, 62%, 1);
+}
+#contact{
+  display: flex;
+  height: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#contact div {
+  padding: 20px 50px 0 0;
+}
+#contact div  a{
+  font-size: 15pt;
+  padding: 15px;
+  border-radius: 100px;
+}
+#contact div  a i{
+  color: hsla(301, 54%, 62%, 1);
+}
+#contact ul{
+  min-width: 400px;
+  padding-left: 40px;
+  border: rgba(131, 69, 129, 0.589) solid 1px;
+  border-radius: 10px;
+}
+#contact ul li:before{
+  content: ">";
+  color: hsla(301, 54%, 62%, 1);
+  font-weight: bold;
+  display: inline-block; 
+  width: 50px;
+}
+#contact ul li{
+  line-height: 4;
+}
+
+#contact #contactintro p{
+  max-width: 800px;
+}
+#contact #contactvragen{
+  max-width: 400px;
+}
