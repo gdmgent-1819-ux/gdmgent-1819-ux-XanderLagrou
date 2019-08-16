@@ -7,3 +7,173 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(75, 75, 75);
+}
+img{
+ width: 100%;   
+}
+a{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+h1{
+    font-family: 'Slabo 27px', serif;
+    text-transform: uppercase;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    margin: 0;
+    padding: 20px 200px;
+    font-size: 20pt;
+}
+
+#actief{
+    color: white;
+    background-color: rgb(242, 121, 1);
+}
+header{
+    background-image: url(../img/background-img/headerfooter.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    min-width: 1200px;
+}
+header div{
+    display: flex;    
+    padding: 0 auto;
+    background-color: rgba(255, 255, 255, 0.393);
+    height: 20vh;
+    min-width: 1200px;
+}
+header .logo{
+    width: 200px;
+}
+header ul{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+.paginablok{
+    border-top: solid 5px rgb(242, 121, 1);
+
+}
+#intro{
+    height: 80vh;
+    background-image: url(../img/background-img/start.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#intro div{
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.393);
+
+}
+
+#eten{
+    background-image: url(../img/background-img/food.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#eten div{
+    background-color: rgba(242, 121, 1, 0.5);
+    text-align: center;
+    padding: 20px 0 60px 0;
+}
+#eten div h2, #eten div a{
+    color: white;
+    text-transform: uppercase;    
+
+}
+#eten div h2{
+    padding-bottom: 30px;
+}
+#eten div a{
+    border: solid 2px white;
+    padding: 10px;
+    margin-bottom: 30px;
+    transition: 0.1s;
+
+}
+#eten div a:hover{
+    border: solid 2px white;
+    color:  rgb(75, 75, 75);
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.update{
+    background-color: rgb(190, 190, 190);
+    border-radius: 25px;
+    display: flex;
+    margin: 20px 200px;
+}
+.update div p{
+    padding-bottom: 20px;
+    max-width: 850px;
+}
+.update div a{
+    border: solid 2px rgb(75, 75, 75);
+    padding: 5px 10px;
+}
+
+
+
+
+#berichten figure{
+    width: 300px;
+    min-width: 300px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+#update1{
+    background-image: url(../img/update/bericht1.jpg);
+}
+#update2{
+    background-image: url(../img/update/bericht2.jpg);
+}
+#update3{
+    background-image: url(../img/update/bericht3.jpg);
+}
+#update4{
+    background-image: url(../img/update/bericht4.jpg);
+}
+#update5{
+    background-image: url(../img/update/bericht5.jpg);
+}
+
+
+footer{
+    background-image: url(../img/background-img/headerfooter.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer div{    
+    border-top: solid 5px rgb(242, 121, 1);
+    background-color: rgba(255, 255, 255, 0.393);
+    padding: 0 200px;
+    height: 160px;
+}
+footer h4{
+    text-transform: uppercase;
+}
